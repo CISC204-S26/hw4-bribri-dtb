@@ -8,10 +8,10 @@ func _ready():
 	add_to_group("player")  # for coins and DeathZone detection
 
 func _physics_process(delta):
-	var dir = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
+	var dir = Input.get_action_strength("move right") - Input.get_action_strength("move left")
 	velocity.x = dir * speed
 
-	if Input.is_action_just_pressed("jump") and is_on_floor():
+	if Input.is_action_just_pressed("move up") and is_on_floor():
 		velocity.y = jump_velocity
 
 	if not is_on_floor():
