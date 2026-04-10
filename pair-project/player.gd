@@ -1,24 +1,18 @@
 extends CharacterBody2D
 
 @export var speed := 200.0
-@export var jump_velocity := -400.0
-
 
 func _ready():
-	add_to_group("player")  # for coins and DeathZone detection
+	add_to_group("player") 
 
-func _physics_process(delta):
-	var dir = Input.get_action_strength("move right") - Input.get_action_strength("move left")
-	velocity.x = dir * speed
+func _physics_process(_delta):
+	var dir_x = Input.get_action_strength("move right") - Input.get_action_strength("move left")
+	var dir_y = Input.get_action_strength("move down") - Input.get_action_strength("move up")
 
-	if Input.is_action_just_pressed("move up") and is_on_floor():
-		velocity.y = jump_velocity
+	var direction = Vector2(dir_x, dir_y).normalized()
+	velocity = direction * speed
 
-
-
-		
+	if dir_x != 0 and $Sprite2D:
+		$Sprite2D.flip_h = dir_x < 0
 
 	move_and_slide()
-
-	if dir != 0 and $Sprite2D:
-		$Sprite2D.flip_h = dir < 0
