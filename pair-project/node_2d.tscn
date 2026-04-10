@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bpuuf5f38p81v"]
 
 [ext_resource type="Script" uid="uid://c3cosa425diex" path="res://player.gd" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://b1xydfdswmcne" path="res://icon.svg" id="1_epypp"]
 [ext_resource type="Texture2D" uid="uid://6daavud7ue8i" path="res://Untitled design.png" id="1_wtcfe"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
@@ -8,6 +9,11 @@ size = Vector2(47, 94)
 
 [node name="Node2D" type="Node2D" unique_id=416776090]
 position = Vector2(88, 67)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=947526577]
+position = Vector2(501.49997, 267)
+scale = Vector2(8.492187, 4.78125)
+texture = ExtResource("1_epypp")
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=73584866]
 position = Vector2(248, 139)
@@ -19,5 +25,8 @@ scale = Vector2(0.22714281, 0.24822699)
 texture = ExtResource("1_wtcfe")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=716912048]
-position = Vector2(237.5, 142)
+position = Vector2(239, 142)
 shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=476659760]
+position = Vector2(241, 148)
