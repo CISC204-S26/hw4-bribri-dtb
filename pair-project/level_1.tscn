@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://d31v0dsin554l"]
 
 [ext_resource type="Texture2D" uid="uid://b2rbxclpmgc68" path="res://pixel house.png" id="1_3hls8"]
+[ext_resource type="PackedScene" uid="uid://bpuuf5f38p81v" path="res://node_2d.tscn" id="2_hbghi"]
 
 [node name="Level 1" type="Node2D" unique_id=1870354116]
 
@@ -8,3 +9,6 @@
 position = Vector2(562, 341.25)
 scale = Vector2(2.1953125, 1.9750733)
 texture = ExtResource("1_3hls8")
+
+[node name="Node2D" parent="." unique_id=416776090 instance=ExtResource("2_hbghi")]
+position = Vector2(329, 277)
