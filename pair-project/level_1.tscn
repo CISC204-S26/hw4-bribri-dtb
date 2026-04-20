@@ -28,6 +28,18 @@ b = Vector2(1016, 608)
 a = Vector2(343, 352)
 b = Vector2(342, 611)
 
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_5rr72"]
+a = Vector2(734, 61)
+b = Vector2(735, 310)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_gyffv"]
+a = Vector2(845, 311)
+b = Vector2(733, 311)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_1pe0h"]
+a = Vector2(935, 308)
+b = Vector2(1013, 309)
+
 [node name="Level 1" type="Node2D" unique_id=1870354116]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1343878532]
@@ -78,3 +90,18 @@ shape = SubResource("SegmentShape2D_j7kpp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionsStuff/StaticBody2D5" unique_id=2093479247]
 shape = SubResource("SegmentShape2D_bjebc")
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="CollisionsStuff" unique_id=875926246]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionsStuff/StaticBody2D6" unique_id=1674776647]
+shape = SubResource("SegmentShape2D_5rr72")
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="CollisionsStuff" unique_id=1095822841]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionsStuff/StaticBody2D7" unique_id=59282272]
+shape = SubResource("SegmentShape2D_gyffv")
+
+[node name="StaticBody2D8" type="StaticBody2D" parent="CollisionsStuff" unique_id=853117596]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionsStuff/StaticBody2D8" unique_id=937434424]
+shape = SubResource("SegmentShape2D_1pe0h")
