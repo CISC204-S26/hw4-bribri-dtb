@@ -1,3 +1,13 @@
 [gd_scene format=3 uid="uid://dllqesl7fto4y"]
 
+[ext_resource type="PackedScene" uid="uid://bpuuf5f38p81v" path="res://node_2d.tscn" id="1_7hl0c"]
+[ext_resource type="Texture2D" uid="uid://b2rbxclpmgc68" path="res://pixel house.png" id="2_btylj"]
+
 [node name="room 4" type="Node2D" unique_id=1637589852]
+
+[node name="Node2D" parent="." unique_id=416776090 instance=ExtResource("1_7hl0c")]
+position = Vector2(77, 186)
+
+[node name="PixelHouse" type="Sprite2D" parent="." unique_id=206939806]
+position = Vector2(540, 305)
+texture = ExtResource("2_btylj")

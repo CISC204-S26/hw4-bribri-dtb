@@ -2,11 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b2rbxclpmgc68" path="res://pixel house.png" id="1_3hls8"]
 [ext_resource type="PackedScene" uid="uid://bpuuf5f38p81v" path="res://node_2d.tscn" id="2_hbghi"]
-[ext_resource type="Script" uid="uid://dl5y7b6y7saxi" path="res://area_2d.gd" id="3_ihfcg"]
-[ext_resource type="Texture2D" uid="uid://d4nabs85mgdyd" path="res://Portal-PNG-Pic.png" id="4_rka8t"]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_5hph3"]
-radius = 55.081757
+[ext_resource type="PackedScene" uid="uid://bj7t70acoj5gv" path="res://portal_2.tscn" id="3_hn12h"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_ihfcg"]
 a = Vector2(-41, -59)
@@ -70,18 +66,6 @@ texture = ExtResource("1_3hls8")
 
 [node name="Node2D" parent="." unique_id=416776090 instance=ExtResource("2_hbghi")]
 position = Vector2(329, 277)
-
-[node name="Area2D" type="Area2D" parent="." unique_id=499698307]
-script = ExtResource("3_ihfcg")
-
-[node name="PortalPngPic" type="Sprite2D" parent="Area2D" unique_id=1530034451]
-position = Vector2(230, 117)
-scale = Vector2(0.36200002, 0.31300002)
-texture = ExtResource("4_rka8t")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=806350927]
-position = Vector2(223, 113)
-shape = SubResource("CircleShape2D_5hph3")
 
 [node name="CollisionsStuff" type="Sprite2D" parent="." unique_id=1014551062]
 
@@ -192,3 +176,6 @@ shape = SubResource("RectangleShape2D_gyffv")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionsStuff/StaticBody2D19" unique_id=117627793]
 position = Vector2(152.5, 216.3125)
 shape = SubResource("RectangleShape2D_gyffv")
+
+[node name="portal2" parent="." unique_id=1246321376 instance=ExtResource("3_hn12h")]
+position = Vector2(77, 43)
