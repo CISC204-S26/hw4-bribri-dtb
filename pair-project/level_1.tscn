@@ -40,6 +40,27 @@ b = Vector2(733, 311)
 a = Vector2(935, 308)
 b = Vector2(1013, 309)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ihfcg"]
+size = Vector2(41.5, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rka8t"]
+size = Vector2(57.5, 68.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5hph3"]
+size = Vector2(381, 57.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j7kpp"]
+size = Vector2(66, 91)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bjebc"]
+size = Vector2(37.5, 51.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5rr72"]
+size = Vector2(84, 110)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gyffv"]
+size = Vector2(59, 88.9375)
+
 [node name="Level 1" type="Node2D" unique_id=1870354116]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1343878532]
@@ -105,3 +126,69 @@ shape = SubResource("SegmentShape2D_gyffv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionsStuff/StaticBody2D8" unique_id=937434424]
 shape = SubResource("SegmentShape2D_1pe0h")
+
+[node name="StaticBody2D9" type="StaticBody2D" parent="CollisionsStuff" unique_id=1585793176]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionsStuff/StaticBody2D9" unique_id=1401163928]
+position = Vector2(462, 453)
+shape = SubResource("RectangleShape2D_ihfcg")
+
+[node name="StaticBody2D10" type="StaticBody2D" parent="CollisionsStuff" unique_id=266746017]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionsStuff/StaticBody2D10" unique_id=753858951]
+position = Vector2(632.25, 451)
+shape = SubResource("RectangleShape2D_ihfcg")
+
+[node name="StaticBody2D11" type="StaticBody2D" parent="CollisionsStuff" unique_id=716125049]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionsStuff/StaticBody2D11" unique_id=1162302472]
+position = Vector2(542, 496)
+shape = SubResource("RectangleShape2D_ihfcg")
+
+[node name="StaticBody2D12" type="StaticBody2D" parent="CollisionsStuff" unique_id=952764752]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionsStuff/StaticBody2D12" unique_id=1669136479]
+position = Vector2(538, 389)
+shape = SubResource("RectangleShape2D_ihfcg")
+
+[node name="StaticBody2D13" type="StaticBody2D" parent="CollisionsStuff" unique_id=1488894984]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionsStuff/StaticBody2D13" unique_id=1646691047]
+position = Vector2(698.75, 297.25)
+shape = SubResource("RectangleShape2D_rka8t")
+
+[node name="StaticBody2D14" type="StaticBody2D" parent="CollisionsStuff" unique_id=546586674]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionsStuff/StaticBody2D14" unique_id=1265998015]
+position = Vector2(536.5, 100.25)
+shape = SubResource("RectangleShape2D_5hph3")
+
+[node name="StaticBody2D15" type="StaticBody2D" parent="CollisionsStuff" unique_id=1631930673]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionsStuff/StaticBody2D15" unique_id=29560747]
+position = Vector2(393, 210.5)
+shape = SubResource("RectangleShape2D_j7kpp")
+
+[node name="StaticBody2D16" type="StaticBody2D" parent="CollisionsStuff" unique_id=632947454]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionsStuff/StaticBody2D16" unique_id=1115565964]
+position = Vector2(461, 207.625)
+shape = SubResource("RectangleShape2D_bjebc")
+
+[node name="StaticBody2D17" type="StaticBody2D" parent="CollisionsStuff" unique_id=591185957]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionsStuff/StaticBody2D17" unique_id=618094737]
+position = Vector2(680, 175)
+shape = SubResource("RectangleShape2D_5rr72")
+
+[node name="StaticBody2D18" type="StaticBody2D" parent="CollisionsStuff" unique_id=597200225]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionsStuff/StaticBody2D18" unique_id=1943861747]
+position = Vector2(313, 186.53125)
+shape = SubResource("RectangleShape2D_gyffv")
+
+[node name="StaticBody2D19" type="StaticBody2D" parent="CollisionsStuff" unique_id=1118738337]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionsStuff/StaticBody2D19" unique_id=117627793]
+position = Vector2(152.5, 216.3125)
+shape = SubResource("RectangleShape2D_gyffv")
