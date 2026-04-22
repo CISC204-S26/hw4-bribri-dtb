@@ -12,8 +12,12 @@ config_version=5
 
 config/name="Pair project"
 run/main_scene="uid://bpuuf5f38p81v"
-config/features=PackedStringArray("4.6", "GL Compatibility")
+config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameState="*res://GameState.gd"
 
 [input]
 

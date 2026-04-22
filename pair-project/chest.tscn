@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dd3q6cjngp620"]
+
+[ext_resource type="Script" uid="uid://warfi44hj4sj" path="res://chest.gd" id="1_8uwsg"]
+[ext_resource type="Texture2D" uid="uid://b7ao4g7xprctk" path="res://—Pngtree—pixel art treasure chest element_21436177.png" id="2_bp1or"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_trlyu"]
+size = Vector2(99, 96.37494)
+
+[node name="Chest" type="Area2D"]
+position = Vector2(3394, 1316)
+script = ExtResource("1_8uwsg")
+
+[node name="Closed chest" type="Sprite2D" parent="."]
+position = Vector2(21.000137, -62.500046)
+scale = Vector2(0.0653333, 0.06566668)
+texture = ExtResource("2_bp1or")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(20.5, -61.8125)
+shape = SubResource("RectangleShape2D_trlyu")

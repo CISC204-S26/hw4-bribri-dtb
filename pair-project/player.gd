@@ -3,7 +3,7 @@ extends CharacterBody2D
 @export var speed := 200.0
 
 func _ready():
-	add_to_group("player") 
+	add_to_group("player")
 
 func _physics_process(_delta):
 	var dir_x = Input.get_action_strength("move right") - Input.get_action_strength("move left")
