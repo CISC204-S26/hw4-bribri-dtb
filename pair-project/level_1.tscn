@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://b2rbxclpmgc68" path="res://pixel house.png" id="1_3hls8"]
 [ext_resource type="PackedScene" uid="uid://cbidyc2ylcst8" path="res://key.tscn" id="2_5hph3"]
 [ext_resource type="PackedScene" uid="uid://bpuuf5f38p81v" path="res://node_2d.tscn" id="2_hbghi"]
+[ext_resource type="PackedScene" uid="uid://b3nogmmnr4tjy" path="res://fish.tscn" id="2_j7kpp"]
 [ext_resource type="PackedScene" uid="uid://bj7t70acoj5gv" path="res://portal_2.tscn" id="3_hn12h"]
 [ext_resource type="Texture2D" uid="uid://ccqkgkcxyw27n" path="res://1.png" id="4_rka8t"]
 [ext_resource type="Texture2D" uid="uid://b52tl67vinmtw" path="res://2.png" id="5_5hph3"]
@@ -66,6 +67,9 @@ size = Vector2(59, 88.9375)
 position = Vector2(565, 340)
 scale = Vector2(2.1953125, 1.9750733)
 texture = ExtResource("1_3hls8")
+
+[node name="Fish" parent="." unique_id=746334138 instance=ExtResource("2_j7kpp")]
+position = Vector2(125, 76)
 
 [node name="Key" parent="." unique_id=1036141533 instance=ExtResource("2_5hph3")]
 position = Vector2(295, -103)

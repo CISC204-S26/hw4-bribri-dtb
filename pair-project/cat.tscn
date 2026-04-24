@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://crlq1lms6qyj1"]
+
+[ext_resource type="Script" uid="uid://dr0n6s1t4mcju" path="res://cat.gd" id="1_52fj1"]
+[ext_resource type="Texture2D" uid="uid://dpq1f7c0w71a3" path="res://—Pngtree—cute pixel cat character_21535172.png" id="1_hcucf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_52fj1"]
+size = Vector2(97.375, 64.375)
+
+[node name="Cat" type="Area2D" unique_id=2107470886]
+position = Vector2(1409, 914)
+script = ExtResource("1_52fj1")
+
+[node name="CAT" type="Sprite2D" parent="." unique_id=1023882183]
+position = Vector2(-9.536743e-06, 0)
+scale = Vector2(0.04819997, 0.0315)
+texture = ExtResource("1_hcucf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=416396049]
+shape = SubResource("RectangleShape2D_52fj1")
