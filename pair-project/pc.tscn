@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dlvnjg4yts4ns"]
+
+[ext_resource type="Texture2D" uid="uid://5oxijdr6m4yn" path="res://pc.png" id="1_ukbfy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ukbfy"]
+
+[node name="Area2D" type="Area2D" unique_id=2080275044]
+
+[node name="Pc" type="Sprite2D" parent="." unique_id=1308357773]
+position = Vector2(544, 184)
+texture = ExtResource("1_ukbfy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1883801308]
+position = Vector2(544, 184)
+shape = SubResource("RectangleShape2D_ukbfy")

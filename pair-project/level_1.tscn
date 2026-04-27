@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bj7t70acoj5gv" path="res://portal_2.tscn" id="3_hn12h"]
 [ext_resource type="Texture2D" uid="uid://ccqkgkcxyw27n" path="res://1.png" id="4_rka8t"]
 [ext_resource type="Texture2D" uid="uid://b52tl67vinmtw" path="res://2.png" id="5_5hph3"]
+[ext_resource type="PackedScene" uid="uid://cqklh54734gbf" path="res://book_case.tscn" id="8_bjebc"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_ihfcg"]
 a = Vector2(-41, -59)
@@ -61,12 +62,18 @@ size = Vector2(84, 110)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gyffv"]
 size = Vector2(59, 88.9375)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1pe0h"]
+size = Vector2(67, 56)
+
 [node name="Level 1" type="Node2D" unique_id=698114408]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1360374006]
 position = Vector2(565, 340)
 scale = Vector2(2.1953125, 1.9750733)
 texture = ExtResource("1_3hls8")
+
+[node name="BookCase" parent="." unique_id=885468814 instance=ExtResource("8_bjebc")]
+position = Vector2(600, 187)
 
 [node name="Fish" parent="." unique_id=746334138 instance=ExtResource("2_j7kpp")]
 position = Vector2(125, 76)
@@ -187,6 +194,12 @@ shape = SubResource("RectangleShape2D_gyffv")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionsStuff/StaticBody2D19" unique_id=1374167731]
 position = Vector2(152.5, 216.3125)
 shape = SubResource("RectangleShape2D_gyffv")
+
+[node name="StaticBody2D20" type="StaticBody2D" parent="CollisionsStuff" unique_id=386491275]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionsStuff/StaticBody2D20" unique_id=567755043]
+position = Vector2(602, 160)
+shape = SubResource("RectangleShape2D_1pe0h")
 
 [node name="portal2" parent="." unique_id=2016852965 instance=ExtResource("3_hn12h")]
 position = Vector2(77, 43)

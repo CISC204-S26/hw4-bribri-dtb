@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cqklh54734gbf"]
+
+[ext_resource type="Texture2D" uid="uid://bo0tqniulp3m" path="res://casew.png" id="1_b50cu"]
+[ext_resource type="Script" uid="uid://ncnaps4t4k2l" path="res://book_case.gd" id="1_et65h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_et65h"]
+size = Vector2(65, 65)
+
+[node name="BookCase" type="Area2D" unique_id=885468814]
+position = Vector2(455, 207)
+script = ExtResource("1_et65h")
+
+[node name="Casew" type="Sprite2D" parent="." unique_id=1951662812]
+scale = Vector2(0.7891566, 0.5)
+texture = ExtResource("1_b50cu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1605777297]
+position = Vector2(1.5, -2.5)
+shape = SubResource("RectangleShape2D_et65h")
