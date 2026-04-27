@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dnhhv3fy7o5mx" path="res://5be5d59da72716d63e55a55e399b0c5e.png" id="1_evplp"]
 [ext_resource type="PackedScene" uid="uid://crlq1lms6qyj1" path="res://cat.tscn" id="2_an4vd"]
 [ext_resource type="PackedScene" uid="uid://dd3q6cjngp620" path="res://chest.tscn" id="2_evplp"]
+[ext_resource type="PackedScene" uid="uid://dlvnjg4yts4ns" path="res://pc.tscn" id="5_hqlld"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_evplp"]
 size = Vector2(1006, 99)
@@ -74,3 +75,6 @@ shape = SubResource("RectangleShape2D_fmxp8")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D7" unique_id=2118643631]
 position = Vector2(535, 404)
 shape = SubResource("RectangleShape2D_fmxp8")
+
+[node name="Area2D" parent="." unique_id=2080275044 instance=ExtResource("5_hqlld")]
+position = Vector2(456, 161)

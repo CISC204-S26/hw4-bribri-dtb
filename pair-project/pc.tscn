@@ -1,15 +1,20 @@
 [gd_scene format=3 uid="uid://dlvnjg4yts4ns"]
 
+[ext_resource type="Script" uid="uid://66g3amge5ijm" path="res://pc.gd" id="1_crfiw"]
 [ext_resource type="Texture2D" uid="uid://5oxijdr6m4yn" path="res://pc.png" id="1_ukbfy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ukbfy"]
+size = Vector2(169, 73)
 
 [node name="Area2D" type="Area2D" unique_id=2080275044]
+position = Vector2(257, 99)
+script = ExtResource("1_crfiw")
 
 [node name="Pc" type="Sprite2D" parent="." unique_id=1308357773]
-position = Vector2(544, 184)
+position = Vector2(5.722046e-06, -3.8146973e-06)
+scale = Vector2(1.8295455, 0.8611111)
 texture = ExtResource("1_ukbfy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1883801308]
-position = Vector2(544, 184)
+position = Vector2(7.5, -1.5)
 shape = SubResource("RectangleShape2D_ukbfy")
