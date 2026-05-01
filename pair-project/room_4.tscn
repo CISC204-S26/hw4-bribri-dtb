@@ -77,4 +77,4 @@ position = Vector2(535, 404)
 shape = SubResource("RectangleShape2D_fmxp8")
 
 [node name="Area2D" parent="." unique_id=2080275044 instance=ExtResource("5_hqlld")]
-position = Vector2(456, 161)
+position = Vector2(462, 176)

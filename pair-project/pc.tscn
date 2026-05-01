@@ -4,17 +4,17 @@
 [ext_resource type="Texture2D" uid="uid://5oxijdr6m4yn" path="res://pc.png" id="1_ukbfy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ukbfy"]
-size = Vector2(169, 73)
+size = Vector2(208, 96)
 
 [node name="Area2D" type="Area2D" unique_id=2080275044]
-position = Vector2(257, 99)
+position = Vector2(505, 85)
 script = ExtResource("1_crfiw")
 
 [node name="Pc" type="Sprite2D" parent="." unique_id=1308357773]
-position = Vector2(5.722046e-06, -3.8146973e-06)
-scale = Vector2(1.8295455, 0.8611111)
+position = Vector2(0, -3.8146973e-06)
+scale = Vector2(2.3579547, 1.2083333)
 texture = ExtResource("1_ukbfy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1883801308]
-position = Vector2(7.5, -1.5)
+position = Vector2(-2, 0)
 shape = SubResource("RectangleShape2D_ukbfy")
